@@ -113,7 +113,7 @@ public class APITests extends TestBase {
         report.printReport(requestBody.toString());
 
         RequestBuilder requestBuilder = RequestBuilder.builder()
-                .headers(getCommonHeaders())
+                .headers(headers)
                 .method(Method.POST)
                 .body(requestBody)
                 .basePath(configuration.getProperty(Constants.API_URL))
@@ -123,10 +123,10 @@ public class APITests extends TestBase {
         assertEquals(cookieId, restUtils.getJsonResponse().getString("cookieId"), "Cookie id from response is not as expected");
     }
 
-    private static Headers getCommonHeaders() {
-        return HeadersBuilder.builder()
-                .setBaseHeaders()
-                .setHeader("host", "credapi.upgrade.com")
-                .build();
-    }
+//    private static Headers getCommonHeaders() {
+//        return HeadersBuilder.builder()
+//                .setBaseHeaders()
+//                .setHeader("host", "credapi.upgrade.com")
+//                .build();
+//    }
 }
