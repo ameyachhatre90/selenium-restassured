@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Test Suite">
+	<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+		<listener class-name="io.qameta.allure.testng.AllureTestNgTestFilter"/>
+	</listeners>
+	<test name="Sample Test">
+		<classes>
+			<class name="tests.api.APITests"/>
+			<class name="tests.api.PersonalInfoCreditCardTests"/>
+			<class name="tests.api.PublicEventsPostTests"/>
+		</classes>
+	</test>
+</suite>
