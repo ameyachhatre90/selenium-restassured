@@ -10,6 +10,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 
+/**
+ * This class is responsible for loading and managing configuration properties.
+ * It provides methods to access properties from a configuration file (`config.properties`)
+ * and system properties. It uses a singleton pattern to ensure only one instance
+ * of the Configuration class exists.
+ */
 public class Configuration {
 
     private final static String[] files = new String[]{"config.properties"};
@@ -18,7 +24,7 @@ public class Configuration {
     private static volatile Configuration configuration;
 
     /**
-     * Load the config.properties into Properties
+     * Loads the config files and system properties into a Properties object.
      *
      * @throws StopTestException throws when provided file is not exist
      */
@@ -35,10 +41,11 @@ public class Configuration {
     }
 
     /**
-     * Creates the Configuration
+     * Creates a single instance of the Configuration class using the Singleton pattern.
+     * If no instance exists, it creates a new one.
      *
-     * @return configuration
-     * @throws StopTestException throws if properties file not exist
+     * @return the Configuration instance
+     * @throws StopTestException throws if a configuration file is not found.
      */
     public static synchronized Configuration getConfiguration() throws StopTestException {
         if (configuration == null)
@@ -47,28 +54,39 @@ public class Configuration {
     }
 
     /**
-     * Returns the Properties
+     * Returns the loaded Properties object containing all configuration properties.
      *
-     * @return loaded properties
+     * @return the loaded Properties object
      */
     public Properties getProperties() {
         return props;
     }
 
     /**
-     * Return the property value of provided key
+     * Retrieves the value of a specific property from the loaded Properties object.
      *
-     * @param propertyName property name
-     * @return property value
+     * @param propertyName the name of the property to retrieve
+     * @return the value of the property, or null if not found
      */
     public String getProperty(final String propertyName) {
         return props.getProperty(propertyName);
     }
 
+    /**
+     * Checks if the "gridRun" property is set to "true" (case-insensitive).
+     *
+     * @return true if grid is enabled, false otherwise
+     */
     public boolean isGridEnabled() {
         return getProperty("gridRun").equalsIgnoreCase("true");
     }
 
+    /**
+     * Retrieves the URL of the Grid Hub server from the "gridUrl" property.
+     *
+     * @return a URL object representing the Grid Hub server details
+     * @throws StopTestException throws if the "gridUrl" property is not set or in an invalid format
+     */
     public URL getGridHubServerDetails() throws StopTestException {
         String hubServerDetails = getProperty("gridUrl");
 

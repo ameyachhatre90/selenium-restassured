@@ -3,6 +3,7 @@ package tests.api;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.inject.Inject;
+import io.qameta.allure.Story;
 import io.restassured.http.Method;
 import model.PublicEventRequest;
 import model.builders.RequestBuilder;
@@ -24,6 +25,7 @@ public class PublicEventsPostTests extends TestBase {
     @Inject
     private RestUtils restUtils;
 
+    @Story("API Tests")
     @Test(testName = "POST public event - Success", dataProvider = "getPublicEventData")
     void createPublicEventSuccess(PublicEventRequest publicEventRequest) {
 //        publicEventRequest.setUrl("https://www.upgrade.com/funnel/personal-information-1/CREDIT_CARD/2000");
@@ -39,6 +41,7 @@ public class PublicEventsPostTests extends TestBase {
                 "Post public event cookieId value is null in the response");
     }
 
+    @Story("API Tests")
     @Test(testName = "POST public event - Bad Request")
     void createPublicEventBadRequest() {
         PublicEventRequest request = getTestDataFromJsonFile("postPublicEventUnhappy.json",

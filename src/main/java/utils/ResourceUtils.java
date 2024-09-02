@@ -4,15 +4,13 @@ import java.net.URISyntaxException;
 import java.nio.file.Paths;
 
 /**
- * The type Resource utils.
+ * This utility class provides methods for obtaining absolute paths to resource files.
  */
 public class ResourceUtils {
 
     /**
-     * Gets resource file path abs path.
+     * Retrieves the absolute path of a resource file based on its relative path within the classpath.
      *
-     * @param relativePath the relative path
-     * @return the resource file path abs path
      */
     public static String getResourceFilePathAbsPath(final String relativePath) {
         try {

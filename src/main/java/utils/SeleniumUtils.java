@@ -14,9 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Utility class containing many static methods to help testing.
- * 
- *
+ * This utility class provides helper methods for interacting with web elements using Selenium WebDriver.
  */
 public class SeleniumUtils {
 	private static final Duration DEFAULT_WAIT_TIME = Duration.ofSeconds(10);
@@ -49,32 +47,6 @@ public class SeleniumUtils {
 			return null;
 		}
 	}
-
-	/**
-	 * Waits for an element to be visible on the page using the specified locator and locator type.
-	 *
-	 * @param driver The WebDriver instance.
-	 * @param locator The locator value (e.g., XPath, CSS selector, name, ID, class).
-	 * @return The visible WebElement, or null if the element is not found within the timeout.
-	 * @throws IllegalArgumentException If the specified locator type is not supported.
-	 */
-	public WebElement waitForElementToBeVisible1(WebDriver driver, String locator, Duration DEFAULT_WAIT_TIME) {
-		WebDriverWait wait = new WebDriverWait(driver, DEFAULT_WAIT_TIME);
-		try {
-			switch (locator) {
-				case "xpath" -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
-				case "css selector" -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator)));
-				case "name" -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(locator)));
-				case "id" ->wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locator)));
-				case "class"->wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(locator)));
-				default -> throw new IllegalArgumentException("Unsupported locator type: " + locator);
-			}
-		} catch (Exception e) {
-			log.error("e: ", e);
-			return null;
-		}
-        return null;
-    }
 
 	/**
 	 * Try to find an element in the page by xpath. If the element is not found,

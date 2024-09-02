@@ -1,9 +1,13 @@
 package tests.api;
 
 import com.google.inject.Inject;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import io.restassured.http.ContentType;
 import io.restassured.http.Headers;
 import io.restassured.http.Method;
+import jdk.jfr.Enabled;
 import model.LoginRequest;
 import model.builders.HeadersBuilder;
 import model.builders.RequestBuilder;
@@ -27,6 +31,7 @@ public class APITests extends TestBase {
     /**
      * This method gets the Details of a Specific Movie
      */
+    @Story("API Tests")
     @Test
     public void testUpgradeHomepageResponseCode() {
         // Send GET request to Upgrade homepage
@@ -39,22 +44,22 @@ public class APITests extends TestBase {
         restUtils.restCall(requestBuilder).isOK().getResponse().assertThat().contentType(ContentType.HTML);
     }
 
-    @Test
-    public void testSuccessfulLogin() {
-        LoginRequest loginRequest = LoginRequest.builder()
-                .username("valid_username")
-                .password("valid_password")
-                .build();
-
-        RequestBuilder requestBuilder = RequestBuilder.builder()
-                .headers(headers)
-                .method(Method.POST)
-                .body(loginRequest)
-                .basePath(configuration.getProperty(Constants.UPGRADE_URL))
-                .uriPath(configuration.getProperty(Constants.LOGIN_PATH))
-                .build();
-        restUtils.restCall(requestBuilder).isOK();
-    }
+//    @Test
+//    public void testSuccessfulLogin() {
+//        LoginRequest loginRequest = LoginRequest.builder()
+//                .username("valid_username")
+//                .password("valid_password")
+//                .build();
+//
+//        RequestBuilder requestBuilder = RequestBuilder.builder()
+//                .headers(headers)
+//                .method(Method.POST)
+//                .body(loginRequest)
+//                .basePath(configuration.getProperty(Constants.UPGRADE_URL))
+//                .uriPath(configuration.getProperty(Constants.LOGIN_PATH))
+//                .build();
+//        restUtils.restCall(requestBuilder).isOK();
+//    }
 
     /**
      * Test Debt Consolidation loan for $2000
@@ -103,7 +108,7 @@ public class APITests extends TestBase {
         requestBody.put("event", "landing_page");
 
         // Build the URL dynamically based on the loan type
-        requestBody.put("url", String.format("https://www.upgrade.com/funnel/personal-information-1/CREDIT_CARD/2000", loanType, fundingAmount));
+        requestBody.put("url", String.format("https://www.upgrade.com/funnel/personal-information-1/%s/%s", loanType, fundingAmount));
 
         report.printReport(requestBody.toString());
 

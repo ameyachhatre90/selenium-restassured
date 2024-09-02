@@ -16,11 +16,22 @@ import java.net.URL;
  */
 public class BrowserProvider implements Provider<WebDriver> {
 
+    /**
+     * Injected configuration object used to retrieve browser and grid settings.
+     */
     @Inject
     private Configuration configuration;
 
+    /**
+     * ThreadLocal variable to store the WebDriver instance for the current thread.
+     */
     public ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
 
+    /**
+     * Provides a new WebDriver instance based on configuration settings.
+     *
+     * @return A new WebDriver instance.
+     */
     @Override
     public WebDriver get() {
         Browser browserName;

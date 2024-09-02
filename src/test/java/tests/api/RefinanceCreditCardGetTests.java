@@ -1,6 +1,7 @@
 package tests.api;
 
 import com.google.inject.Inject;
+import io.qameta.allure.Story;
 import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 import model.builders.RequestBuilder;
@@ -15,9 +16,9 @@ public class RefinanceCreditCardGetTests extends TestBase {
     @Inject
     private RestUtils restUtils;
 
+    @Story("API Tests")
     @Test(testName = "Personal Information Credit Card - Success")
     void personalInformationCreditCardSuccess() {
-
         RequestBuilder requestBuilder = RequestBuilder.builder()
                 .headers(headers)
                 .method(Method.GET)

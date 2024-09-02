@@ -8,12 +8,19 @@ import lombok.Singular;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This builder class facilitates the creation of Headers objects used in REST Assured requests.
+ * It provides methods to add base headers like "Accept" and "Content-Type" as well as custom headers with specific key-value pairs.
+ */
 @Builder
 public class HeadersBuilder {
 
     @Singular
     private final List<Header> headers;
 
+    /**
+     * Inner builder class for constructing HeadersBuilder instances.
+     */
     public static class HeadersBuilderBuilder {
 
         /**

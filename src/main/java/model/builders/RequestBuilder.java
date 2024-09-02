@@ -7,6 +7,11 @@ import lombok.Getter;
 
 import java.util.Map;
 
+/**
+ * This builder class helps create a request object for REST Assured requests.
+ * It provides methods to define various aspects of the request.
+ * Reduces boilerplate with Builder and Getter.
+ */
 @Builder
 @Getter
 public class RequestBuilder {

@@ -1,6 +1,7 @@
 package tests.api;
 
 import com.google.inject.Inject;
+import io.qameta.allure.Story;
 import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 import model.builders.RequestBuilder;
@@ -19,6 +20,7 @@ public class PersonalInfoCreditCardTests extends TestBase {
     @Inject
     private RestUtils restUtils;
 
+    @Story("API Tests")
     @Test(testName = "Personal Information Credit Card - Success")
     void personalInformationCreditCardSuccess() {
         String cookieId = UUID.randomUUID().toString();
@@ -38,6 +40,7 @@ public class PersonalInfoCreditCardTests extends TestBase {
         assertTrue(restUtils.getResponseBodyAsString().contains("<title>Upgrade - Affordable Online Personal Loans</title>"));
     }
 
+    @Story("API Tests")
     @Test(testName = "Login - Unauthorised")
     void loginUnauthorised() {
         RequestBuilder requestBuilder = RequestBuilder.builder()

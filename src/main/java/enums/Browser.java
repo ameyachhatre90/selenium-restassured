@@ -53,6 +53,7 @@ public enum Browser {
 
     /**
      * Method to be implemented by each Browser Enum.
+     * Initializes the WebDriver for this browser.
      *
      * @param capabilities The desired capabilities for the browser.
      * @return A WebDriver instance.

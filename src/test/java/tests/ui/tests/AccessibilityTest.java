@@ -5,6 +5,10 @@ import com.deque.html.axecore.args.AxeRunOptions;
 import com.deque.html.axecore.results.Results;
 import com.deque.html.axecore.results.Rule;
 import com.deque.html.axecore.selenium.AxeBuilder;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import tests.ui.pages.HomePage;
@@ -17,6 +21,12 @@ import static org.testng.Assert.assertEquals;
 
 public class AccessibilityTest extends WebTestBase {
 
+    /**
+     * This method tests the Upgrade About Us Page.
+     */
+    @Severity(SeverityLevel.BLOCKER)
+    @Story("Accessibility Tests")
+    @Description("Verifies About Us Page Load")
     @Test(testName = "Accessibility Test using Selenium")
     public void checkAccessibility() {
         AxeRunOnlyOptions runOnlyOptions = new AxeRunOnlyOptions();

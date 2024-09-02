@@ -8,12 +8,12 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 /**
- * The type File utils.
+ * This utility class provides methods for reading and manipulating files.
  */
 public class FileUtils {
 
     /**
-     * Read all lines string.
+     * Reads all lines from a text file and returns them as a single String.
      *
      * @param filePath the file path
      * @return the string

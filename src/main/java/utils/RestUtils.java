@@ -15,18 +15,25 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 import static org.hamcrest.Matchers.is;
 
 /**
- * The type Rest utils.
+ * This utility class provides methods for interacting with RESTful APIs using Rest Assured.
+ * It simplifies sending requests and verifying responses.
  */
 public class RestUtils {
 
+    /**
+     * Injected API base URL retrieved from a named binding.
+     */
     @Inject
     @Named("apiUrl")
     private String apiUrl;
 
+    /**
+     * Stores the last executed response for chaining validations.
+     */
     private ValidatableResponse validatableResponse;
 
     /**
-     * Rest call rest utils.
+     * Builds and executes a REST request based on the provided RequestBuilder object.
      *
      * @param requestBuilder the request builder
      * @return the rest utils
@@ -55,7 +62,7 @@ public class RestUtils {
     }
 
     /**
-     * Gets response.
+     * Retrieves the last executed response as a ValidatableResponse object for further assertions.
      *
      * @return the response
      */
@@ -132,7 +139,7 @@ public class RestUtils {
     }
 
     /**
-     * Gets json response.
+     * Extracts the response body as a JsonPath object for JSON parsing.
      *
      * @return the json response
      */
@@ -141,7 +148,7 @@ public class RestUtils {
     }
 
     /**
-     * Is schema matching rest utils.
+     * Validates the response body against a specified JSON schema located in the classpath.
      *
      * @param schemaPath the schema path
      * @return the rest utils

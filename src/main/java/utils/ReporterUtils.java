@@ -3,7 +3,7 @@ package utils;
 import org.testng.Reporter;
 
 /**
- * Customer Reporting utils
+ * This utility class provides methods for logging messages to both the TestNG report and the console.
  */
 public class ReporterUtils {
 

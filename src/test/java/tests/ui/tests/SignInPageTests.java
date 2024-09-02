@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import org.testng.annotations.Test;
 import tests.ui.pages.HomePage;
 import tests.ui.pages.SignInPage;
@@ -25,6 +26,7 @@ public class SignInPageTests extends WebTestBase {
      * This method tests the Sign-In Page.
      */
     @Severity(SeverityLevel.BLOCKER)
+    @Story("UI Tests")
     @Description("Verifies Sign In Functionality")
     @Test
     public void testSignIn() {

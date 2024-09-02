@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import org.testng.annotations.Test;
 import tests.ui.pages.AboutUsPage;
 import tests.ui.pages.HomePage;
@@ -23,6 +24,7 @@ public class AboutUsPageTests extends WebTestBase {
      * This method tests the Upgrade About Us Page.
      */
     @Severity(SeverityLevel.BLOCKER)
+    @Story("UI Tests")
     @Description("Verifies About Us Page Load")
     @Test
     public void aboutUsPageLoadTest() {
