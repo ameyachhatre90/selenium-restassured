@@ -13,33 +13,35 @@ import utils.AllureReporter;
 import utils.SeleniumUtils;
 
 /**
- * The type Test base.
+ * This class serves as the base class for all UI tests. It provides common functionalities
+ * like dependency injection, WebDriver management, and test reporting.
  */
 public class WebTestBase {
     /**
-     * The Report.
+     * An instance of AllureReporter for generating test reports.
      */
     protected AllureReporter report;
 
     /**
-     * The Injector.
+     * Injector instance used to manage dependencies.
      */
     protected Injector injector = com.google.inject.Guice.createInjector(new DIModule());
 
     /**
-     * The Driver.
+     * WebDriver instance used for browser automation. Injected through Guice.
      */
     @Inject
     protected WebDriver driver;
 
     /**
-     * The Configuration.
+     * Configuration object containing test configuration details. Injected through Guice.
      */
     @Inject
     protected Configuration configuration;
 
     /**
-     * Before suite.
+     * This method is executed before the entire test suite starts.
+     * Currently empty, but can be used for any setup tasks specific to the test suite.
      */
     @BeforeSuite
     public void beforeSuite() {
@@ -47,7 +49,10 @@ public class WebTestBase {
     }
 
     /**
-     * This method will be executed before the test starts.
+     * This method is executed before each test case.
+     * It performs the following tasks:
+     *  - Injects dependencies using the injector.
+     *  - Creates an instance of AllureReporter for test reporting.
      */
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod() {
@@ -56,9 +61,12 @@ public class WebTestBase {
     }
 
     /**
-     * This method will be executed at the end of the test.
+     * This method is executed after each test case.
+     * It performs the following tasks:
+     *  - If the test fails, it attaches a screenshot to the Allure report.
+     *  - It closes and quits the WebDriver instance.
      *
-     * @param result the result
+     * @param result The TestResult object containing information about the test execution.
      */
     @AfterMethod(alwaysRun = true)
     public void afterMethod(ITestResult result) {

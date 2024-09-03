@@ -18,21 +18,31 @@ import java.io.IOException;
 import static org.testng.Assert.fail;
 
 /**
- * The type Test base.
+ * This class serves as the base class for all API tests. It provides common functionalities
+ * like setting up headers, accessing configuration, reading test data from JSON files, and basic test reporting.
+ *
  */
 @Guice(modules = DIModule.class)
 public class TestBase {
+    /**
+     * The base headers used in API requests.
+     */
     protected Headers headers;
 
     /**
-     * The Configuration.
+     * The configuration object containing test configuration details.
      */
     protected Configuration configuration;
 
     /**
-     * Before method
+     * This method is executed before each test case.
+     * It performs the following tasks:
+     *  - Sets the current TestResult for reporting.
+     *  - Logs the start of the test case.
+     *  - Creates a default set of headers using HeadersBuilder.
+     *  - Reads the configuration object.
      *
-     * @param result the result
+     * @param result The TestResult object containing information about the test execution.
      */
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod(ITestResult result) {
@@ -43,9 +53,10 @@ public class TestBase {
     }
 
     /**
-     * After method.
+     * This method is executed after each test case.
+     * It logs the completion of the test case.
      *
-     * @param result the result
+     * @param result The TestResult object containing information about the test execution.
      */
     @AfterMethod(alwaysRun = true)
     public void afterMethod(ITestResult result) {
@@ -55,12 +66,13 @@ public class TestBase {
 
 
     /**
-     * Gets test data from json file.
+     * Reads test data from a JSON file located in the "input" directory of the test resources.
      *
-     * @param <T>      the type parameter
-     * @param filePath the file path
-     * @param type     the type
-     * @return the test data from json file
+     * @param <T>      The type of the object to be deserialized from the JSON file.
+     * @param filePath  The relative path of the JSON file within the "input" directory.
+     * @param type     The class representing the type of the object to be deserialized.
+     * @return         An instance of the specified type populated from the JSON data.
+     * @throws IOException If there is an error reading the file or deserializing the data.
      */
     protected <T> T getTestDataFromJsonFile(final String filePath, Class<T> type) {
         ObjectMapper mapper = new ObjectMapper();
