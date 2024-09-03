@@ -37,10 +37,36 @@ CHROME {
 
 ## Instantiating a WebDriver
 
-After implementing the initialize logic behind the scenes, in order to help us to instantiate a new WebDriver, just call the method **createDriver** of the class **BrowserProvider** passing a **Browser Enum**.
+WebDriver will be created automatically whenever the web test(extending ```WebTestBase```) is called. We are initialising and closing the WebDriver using ```@BeforeMethod``` and ```@AfterMethod``` classes. 
+
+We are using google Guice DI(```DIModule```) to create the driver. ```BrowserProvider``` class will handle the driver creation and closing after each test.
+
+To use the **WebDriver**, we need to inject the **WebDriver** class where required. 
 
 ```java
-WebDriver driver = BrowserProvider.createDriver(Browser.CHROME);
+@Inject
+private WebDriver driver;
+```
+
+Page classes will also be created using guice DI and will need to inject them into the class where required. Page class constructor should have the **Inject** annotation.
+
+```Page class constructor
+@Inject
+public HomePage(WebDriver driver) {
+    super(driver);
+}
+```
+**Inject Page Class**
+
+```inject page class
+@Inject
+private HomePage homePage;
+```
+
+**Call page class methods**
+
+```java
+homePage.navigateToAboutUs();
 ```
 
 
