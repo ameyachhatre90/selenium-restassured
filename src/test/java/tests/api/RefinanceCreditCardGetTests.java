@@ -13,6 +13,9 @@ import static org.testng.Assert.assertNotNull;
 
 public class RefinanceCreditCardGetTests extends TestBase {
 
+    /**
+     *  Injects an instance of RestUtils into this class.
+     */
     @Inject
     private RestUtils restUtils;
 

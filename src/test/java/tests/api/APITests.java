@@ -1,15 +1,9 @@
 package tests.api;
 
 import com.google.inject.Inject;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import io.restassured.http.ContentType;
-import io.restassured.http.Headers;
 import io.restassured.http.Method;
-import jdk.jfr.Enabled;
-import model.LoginRequest;
-import model.builders.HeadersBuilder;
 import model.builders.RequestBuilder;
 import org.testng.annotations.Test;
 import utils.AllureReporter;
@@ -25,6 +19,9 @@ import static org.testng.Assert.assertEquals;
 public class APITests extends TestBase {
     private static final AllureReporter report = new AllureReporter();
 
+    /**
+     *  Injects an instance of RestUtils into this class.
+     */
     @Inject
     private RestUtils restUtils;
 

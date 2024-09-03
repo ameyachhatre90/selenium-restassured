@@ -17,6 +17,9 @@ import static org.testng.Assert.assertTrue;
 
 public class PersonalInfoCreditCardTests extends TestBase {
 
+    /**
+     *  Injects an instance of RestUtils into this class.
+     */
     @Inject
     private RestUtils restUtils;
 
