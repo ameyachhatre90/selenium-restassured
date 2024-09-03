@@ -14,6 +14,10 @@ import static org.testng.Assert.assertEquals;
  * Home Page Tests
  */
 public class HomePageTests extends WebTestBase {
+
+    /**
+     *  Injects an instance of HomePage into this class.
+     */
     @Inject
     private HomePage homePage;
 

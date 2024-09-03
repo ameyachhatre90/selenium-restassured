@@ -17,6 +17,10 @@ import static org.testng.Assert.assertEquals;
  */
 @Test
 public class SignInPageTests extends WebTestBase {
+
+    /**
+     *  Injects an instance of HomePage & SignInPage into this class.
+     */
     @Inject
     private HomePage homePage;
     @Inject

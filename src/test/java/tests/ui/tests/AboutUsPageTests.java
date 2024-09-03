@@ -12,9 +12,13 @@ import tests.ui.pages.HomePage;
 import static org.testng.Assert.assertEquals;
 
 /**
- *  About Us Page Tests 1
+ *  About Us Page Tests
  */
 public class AboutUsPageTests extends WebTestBase {
+
+    /**
+     *  Injects an instance of HomePage & AboutUsPage into this class.
+     */
     @Inject
     private HomePage homePage;
     @Inject
