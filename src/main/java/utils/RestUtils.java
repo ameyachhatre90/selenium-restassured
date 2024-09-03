@@ -34,11 +34,22 @@ public class RestUtils {
 
     /**
      * Builds and executes a REST request based on the provided RequestBuilder object.
+     * 1. Takes a RequestBuilder object as input, which encapsulates all the necessary information
+     *    for the request (base URI, headers, query parameters, body, method, and URI path).
+     * 2. Ensure there are no empty query parameters and
+     *    add the key-value pair to the request specification using rs.queryParam()
+     * 3. Ensures that the RequestBuilder has a non-null request body and
+     *    add the request body to the request specification using rs.body().
+     * 4. Execute the request using the specified HTTP method (e.g., GET, POST) & URI path.
+     *    Returns a ValidatableResponse object, which allows for further validations.
+     * 5. The method returns this, allowing for method chaining so that multiple REST calls
+     *    can be chained together in a more concise way.
      *
      * @param requestBuilder the request builder
      * @return the rest utils
      */
     public RestUtils restCall(final RequestBuilder requestBuilder) {
+
         RequestSpecification rs = given()
                 .baseUri(requestBuilder.getBasePath())
                 .log().all()
