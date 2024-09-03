@@ -1,5 +1,8 @@
 package utils;
 
+/**
+ * A class containing constants used in REST Assured API calls.
+ */
 public class Constants {
     public final static String API_URL = "apiUrl";
     public final static String UPGRADE_URL = "upgradeUrl";
