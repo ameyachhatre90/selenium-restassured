@@ -1,0 +1,453 @@
+{
+  "componentChunkName": "component---src-templates-loans-index-js",
+  "path": "/personal-loans/refinance-credit-cards/",
+  "result": {
+    "data": {
+      "markdownRemark": {
+        "fields": {
+          "slug": "/personal-loans/refinance-credit-cards/"
+        },
+        "frontmatter": {
+          "seo": {
+            "title": "Credit Card Refinance Loans | Upgrade ",
+            "description": "Pay off your high interest credit card debt with a personal loan through Upgrade. Loans feature low fixed rates and affordable monthly payments. Check your rate with no obligation and get a pre-approved offer in just minutes. ",
+            "image": "/img/seo/PL-RefinanceCC-Meta.png"
+          },
+          "hero": {
+            "breadcrumb": {
+              "currentPage": "Credit Card Refinance",
+              "paths": [
+                {
+                  "label": "Personal Loans",
+                  "url": "/personal-loans/"
+                }
+              ]
+            },
+            "title": null,
+            "subtitle": "Refinance credit card debt",
+            "image": "/img/pl-refinance-credit-card-hero.png",
+            "highlights": [
+              {
+                "item": "Loans up to $50,000"
+              },
+              {
+                "item": "Affordable monthly payments"
+              },
+              {
+                "item": "No prepayment fees"
+              },
+              {
+                "item": "Fast funding†"
+              }
+            ],
+            "bulletType": "checkmark-thin",
+            "caption": null,
+            "backgroundColor": "backgroundPage",
+            "hideImageOnMobile": false,
+            "hideNavigation": null,
+            "showForm": null,
+            "isResponsiveImage": null,
+            "ctaLinkUrl": null,
+            "ctaButtonText": null,
+            "ctaSticky": null
+          },
+          "banner": {
+            "backgroundColor": "backgroundAccentPL",
+            "primaryText": "Get $200 with Rewards Checking Plus",
+            "primaryTextColor": "accentSecondary3",
+            "secondaryText": "when you also open an account and direct deposit at least $1,000**",
+            "secondaryTextColor": "contentWeak"
+          },
+          "featureDescription": null,
+          "products": null,
+          "relatedProducts": null,
+          "infoTypes": {
+            "title": "Why refinance your credit cards with a personal loan?",
+            "subtitle": null,
+            "backgroundColor": "backgroundPrimary",
+            "fontColor": null,
+            "columns": 4,
+            "imageHeight": 30,
+            "alignItems": "center",
+            "items": [
+              {
+                "image": "/img/refinance-loan-control.svg",
+                "imageWidth": 150,
+                "imageHeight": 90,
+                "title": "Take control",
+                "description": "Streamline multiple payments into a single monthly payment that’s easy to manage and pay off.",
+                "list": null
+              },
+              {
+                "image": "/img/refinance-loan-rate.svg",
+                "imageWidth": 150,
+                "imageHeight": 90,
+                "title": "Lower your rates",
+                "description": "Eliminate high-interest debt and credit card payments with a lower rate.",
+                "list": null
+              },
+              {
+                "image": "/img/umbrella-icon.svg",
+                "imageWidth": 150,
+                "imageHeight": 90,
+                "title": "No surprises",
+                "description": "Get a fixed rate that won’t ever change. Be confident that you know how much you’re paying each month.",
+                "list": null
+              },
+              {
+                "image": "/img/refinance-loan-debt-faster.svg",
+                "imageWidth": 150,
+                "imageHeight": 90,
+                "title": "Get out of debt faster",
+                "description": "Find the relief of a clear payoff date that you can circle on your calendar.",
+                "list": null
+              }
+            ]
+          },
+          "infoTypesAlt": {
+            "title": "Eliminate high-interest credit card payments with a lower rate",
+            "subtitle": "Streamline multiple payments into a single monthly payment that’s easy to manage and pay off.",
+            "backgroundColor": "backgroundPrimary",
+            "fontColor": null,
+            "columns": 1,
+            "imageHeight": null,
+            "alignItems": "center",
+            "items": [
+              {
+                "image": "/img/icon-credit-card-circle.svg",
+                "imageWidth": 50,
+                "imageHeight": 50,
+                "title": "Pay credit card bills directly",
+                "description": "Choose Debt Payoff and we’ll send payments directly to your lenders upfront. Plus, you’ll get a discount on your interest rate.*"
+              }
+            ]
+          },
+          "verticalSteps": {
+            "title": "It's quick and easy to apply for a credit card refinance loan online",
+            "backgroundColor": "backgroundPrimary",
+            "alignItems": null,
+            "items": [
+              {
+                "title": "Check your rate",
+                "description": "Apply online in minutes and see your rate with no obligation, cost, or impact to your credit score.",
+                "styledText": "1",
+                "titleFontSize": null
+              },
+              {
+                "title": "Choose your personal loan*",
+                "description": "Review multiple loan options and decide which offer is best for you.",
+                "styledText": "2",
+                "titleFontSize": null
+              },
+              {
+                "title": "Fast funding†",
+                "description": "Accept your personal loan offer and get your money within a day of clearing necessary verifications.",
+                "styledText": "3",
+                "titleFontSize": null
+              }
+            ]
+          },
+          "originationFee": {
+            "title": "A simple breakdown of a personal loan",
+            "subtitle": "Get to know the rates, fees and your payback plan",
+            "loanAmount": 10000,
+            "originationFee": 500,
+            "APR": "17.98",
+            "YIR": "14.32",
+            "OTOriginationFee": "5",
+            "months": 36,
+            "payback": "343.33",
+            "backgroundColor": "backgroundPrimary"
+          },
+          "flexibility": {
+            "title": "Personal loans through Upgrade are flexible & customizable",
+            "subtitle": "Choose the best personal loan that fits your budget and schedule to get out of debt",
+            "image": "/img/diagram-select-offer.svg"
+          },
+          "featured": {
+            "title": "Personal loan reviews from our customers",
+            "text": "It is great working with Upgrade. They sent the money right away to my bank account and I can start paying off my credit cards. Thanks Upgrade for your help. Upgrade is great!",
+            "label": "Jose, Refinance Credit Cards",
+            "backgroundColor": "backgroundPrimary",
+            "innerColor": "backgroundAccentPL"
+          },
+          "reviews": {
+            "snippet": "<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"5a42bb96b894c904ac6f3662\" data-style-height=\"140px\" data-style-width=\"100%\" data-theme=\"light\" data-tags=\"creditcardrefi\" data-stars=\"1,2,3,4,5\"> <a href=\"https://www.trustpilot.com/review/upgrade.com\" target=\"_blank\" rel=\"noopener noreferrer\">Trustpilot</a> </div>",
+            "CTAText": "See More Reviews",
+            "link": "/reviews/",
+            "title": null,
+            "borderless": true
+          },
+          "customersReview": {
+            "items": [
+              {
+                "content": "It is great working with Upgrade. They sent the money right away to my bank account and I can start paying off my credit cards. Thanks Upgrade for your help. Upgrade is great!”",
+                "name": "Jose",
+                "product": "Refinance Credit Cards",
+                "result": "",
+                "image": "/img/balloon.png",
+                "title": "What customers think of Upgrade..."
+              },
+              {
+                "content": "Ease, convenience and speed made this a great experience. Representatives were amazing, helpful and friendly.",
+                "name": "Brunet",
+                "product": "",
+                "result": "",
+                "image": "/img/PiggyBank.png",
+                "title": ""
+              },
+              {
+                "content": "Fast and efficient. Straightforward process and so far from what I can tell, everything is running smooth.",
+                "name": "JD",
+                "product": "",
+                "result": "",
+                "image": "/img/AutoRefiAuto.png",
+                "title": ""
+              }
+            ],
+            "title": "What customers are saying: major purchase loans"
+          },
+          "downloadApps": {
+            "title": "Upgrade on the go",
+            "subTitle": "Manage your account with the app",
+            "backgroundColor": "backgroundPrimary",
+            "innerColor": "backgroundAccentCard",
+            "image": "/img/mobile-app-features.png",
+            "linkTitle": "",
+            "linkAddress": ""
+          },
+          "faq": {
+            "title": "Personal Loan FAQs",
+            "layout": 3,
+            "items": [
+              {
+                "question": "How does credit card refinancing work?",
+                "answer": "Credit card refinancing allows you to combine multiple credit card payments into one monthly payment. It’s an approach to [paying off your credit cards](https://www.upgrade.com/credit-health/insights/pay-off-credit-card-debt/). If you use a loan to consolidate your credit cards, you’ll make a single monthly payment instead of one for each credit card. You’ll also have a date when you’ll be debt free - for example, if you get a loan with a 36 month term, you’ll know that your credit card debt will be paid off in 36 months. Lastly, personal loans through Upgrade have fixed interest rates. This means your interest rate will never go up, you can easily predict how much you’ll pay each month, and you may save on interest over time!"
+              },
+              {
+                "question": "How does Debt Payoff work?",
+                "answer": "The Debt Payoff option may appear when you check your rate with Upgrade. It allows you to use all or part of your loan to pay off existing debt. If you’re approved for a personal loan and select this option, you’ll tell Upgrade which credit card debts or personal loans you’d like us to pay and how much of your new loan you’d like to put towards this debt. Upgrade will coordinate sending the funds from your new personal loan to your previous creditors."
+              },
+              {
+                "question": "What's the difference between refinancing credit card debt with a personal loan and a balance transfer?",
+                "answer": "A balance transfer happens when you move debt from one account to another. This can help you lower your interest rate, but it has a few downsides. For one, you’ll typically be charged a balance transfer fee between 3-5% of the amount transferred. You may also have a low balance transfer card limit, which will keep you from transferring your full balance. Additionally, you won’t be able to transfer a balance from the same issuer. And since you’re transferring one credit card balance to another, you may still deal with variable interest rates that can cost you more money over time.\n\nOn the other hand, a personal loan gives you a fixed interest rate and a set date when you’ll have paid off your debt. \n\nLearn more about [revolving debt (credit cards) vs. installment debt (personal loans).](https://www.upgrade.com/credit-health/insights/revolving-debt-vs-installment-debt/)"
+              },
+              {
+                "question": "How will refinancing my credit cards affect my credit score?",
+                "answer": "Refinancing credit card debt with a personal loan increases your available credit. If the amount of credit you're using stays consistent and your available credit increases, [your credit utilization ratio will be lower](https://www.upgrade.com/credit-health/insights/credit-utilization-ratio/). This can help increase your credit score.\n\nAdditionally, if you make payments on your new personal loan on time, you’ll improve your payment history. Payment history is the biggest factor behind your credit score."
+              }
+            ],
+            "showFAQ": true
+          },
+          "contact": {
+            "backgroundColor": "backgroundPrimary",
+            "title": "Need Help?",
+            "hideBackground": true
+          },
+          "checkYourRateForm": {
+            "title": "See if a personal loan is right for you.",
+            "subtitle": "Checking your rate won’t affect your credit score."
+          },
+          "secondaryCTA": {
+            "title": "Pay off your high-interest credit cards and save money with a personal loan",
+            "subtitle": null,
+            "backgroundColor": "backgroundAccentPL",
+            "image": "/img/RefinanceCC-Hero.png"
+          },
+          "awards": null,
+          "legal": "\\* Personal loans made through Upgrade feature Annual Percentage Rates (APRs) of 9.99%-35.99%. All personal loans have a 1.85% to 9.99% origination fee, which is deducted from the loan proceeds. Lowest rates require Autopay and paying off a portion of existing debt directly. Loans feature repayment terms of 24 to 84 months. For example, if you receive a $10,000 loan with a 36-month term and a 17.59% APR (which includes a 13.94% yearly interest rate and a 5% one-time origination fee), you would receive $9,500 in your account and would have a required monthly payment of $341.48. Over the life of the loan, your payments would total $12,293.46. The APR on your loan may be higher or lower and your loan offers may not have multiple term lengths available. Actual rate depends on credit score, credit usage history, loan term, and other factors. Late payments or subsequent charges and fees may increase the cost of your fixed rate loan. There is no fee or penalty for repaying a loan early.\n\n\\*\\* To qualify for the welcome bonus, you must add a Rewards Checking Plus account through Upgrade to your loan application, receive the loan, open the Rewards Checking Plus account, and direct deposit at least $1,000 to your Rewards Checking Plus account within 45 days of the date the Rewards Checking Plus account is opened. If you have previously opened a checking account through Upgrade or do not open a Rewards Checking Plus account as part of this application process, you are not eligible for this welcome bonus offer. Your Rewards Checking Plus account must be open and in good standing and you must be current on all loan(s) through Upgrade (including, for avoidance of doubt, any auto refinance loan(s)) to receive a bonus. Joint loan applications do not qualify for the welcome bonus. Welcome bonus offers cannot be combined, substituted, or applied retroactively. The bonus will be applied to your Rewards Checking Plus account as a one-time payout within 60 days of meeting the conditions. Approval of your loan is not guaranteed and is subject to our verification and review process.\n\n† Accept your loan offer and your funds will be sent to your bank or designated account within one (1) business day of clearing necessary verifications. Availability of the funds is dependent on how quickly your bank processes the transaction. From the time of approval, funds sent directly to you should be available within one (1) business day. Funds sent directly to pay off your creditors may take up to 2 weeks to clear, depending on the creditor.\n\nApple, Apple Pay®, and the Apple logo are trademarks of Apple Inc., registered in the US and other countries. App Store is a service mark of Apple Inc. Google, Google Wallet™ and the Google logo are trademarks of Google Inc.",
+          "notice": "PERSONAL_LOAN",
+          "layout": null
+        }
+      }
+    },
+    "pageContext": {
+      "id": "ff60719d-8a96-5ba8-b13b-aec9efbe9f31",
+      "recentBlogPosts": [
+        {
+          "id": "feb8cc16-736d-5db6-a378-72291e25a509",
+          "title": "What Is FDIC Insurance and How Does It Work?",
+          "slug": "/credit-health/insights/what-is-fdic-insurance-and-how-does-it-work/",
+          "image": {
+            "layout": "constrained",
+            "backgroundColor": "#182828",
+            "images": {
+              "fallback": {
+                "src": "/static/9cf3931bf84ecef327d80ba7780f81f6/3b307/what-is-fdic-insurance.jpg",
+                "srcSet": "/static/9cf3931bf84ecef327d80ba7780f81f6/d9f52/what-is-fdic-insurance.jpg 200w,\n/static/9cf3931bf84ecef327d80ba7780f81f6/0132d/what-is-fdic-insurance.jpg 400w,\n/static/9cf3931bf84ecef327d80ba7780f81f6/3b307/what-is-fdic-insurance.jpg 800w",
+                "sizes": "(min-width: 768px) 384px, 100vw"
+              },
+              "sources": [
+                {
+                  "srcSet": "/static/9cf3931bf84ecef327d80ba7780f81f6/b9488/what-is-fdic-insurance.webp 200w,\n/static/9cf3931bf84ecef327d80ba7780f81f6/47294/what-is-fdic-insurance.webp 400w,\n/static/9cf3931bf84ecef327d80ba7780f81f6/89c0d/what-is-fdic-insurance.webp 800w",
+                  "type": "image/webp",
+                  "sizes": "(min-width: 768px) 384px, 100vw"
+                }
+              ]
+            },
+            "width": 800,
+            "height": 533
+          }
+        },
+        {
+          "id": "8f6bccfe-18df-5520-ac17-6fb75adfea6a",
+          "title": "What Is a High-Yield Savings Account?",
+          "slug": "/credit-health/insights/what-is-a-high-yield-savings-account/",
+          "image": {
+            "layout": "constrained",
+            "backgroundColor": "#f8f8f8",
+            "images": {
+              "fallback": {
+                "src": "/static/fa47778876a7e9b08633ec1dcbf1e252/3b307/what-is-a-high-yield-savings-account.jpg",
+                "srcSet": "/static/fa47778876a7e9b08633ec1dcbf1e252/d9f52/what-is-a-high-yield-savings-account.jpg 200w,\n/static/fa47778876a7e9b08633ec1dcbf1e252/0132d/what-is-a-high-yield-savings-account.jpg 400w,\n/static/fa47778876a7e9b08633ec1dcbf1e252/3b307/what-is-a-high-yield-savings-account.jpg 800w",
+                "sizes": "(min-width: 768px) 384px, 100vw"
+              },
+              "sources": [
+                {
+                  "srcSet": "/static/fa47778876a7e9b08633ec1dcbf1e252/b9488/what-is-a-high-yield-savings-account.webp 200w,\n/static/fa47778876a7e9b08633ec1dcbf1e252/47294/what-is-a-high-yield-savings-account.webp 400w,\n/static/fa47778876a7e9b08633ec1dcbf1e252/89c0d/what-is-a-high-yield-savings-account.webp 800w",
+                  "type": "image/webp",
+                  "sizes": "(min-width: 768px) 384px, 100vw"
+                }
+              ]
+            },
+            "width": 800,
+            "height": 533
+          }
+        },
+        {
+          "id": "67dc211b-e182-5baf-9b72-0e984073086f",
+          "title": "4 Best Budgeting Apps of August 2024",
+          "slug": "/credit-health/insights/4-best-budgeting-apps-of-2024/",
+          "image": {
+            "layout": "constrained",
+            "backgroundColor": "#e8e8e8",
+            "images": {
+              "fallback": {
+                "src": "/static/5496a0c1293230c5dd12aa7b447827f8/948a2/best-budget-app-2024.jpg",
+                "srcSet": "/static/5496a0c1293230c5dd12aa7b447827f8/3a1a4/best-budget-app-2024.jpg 181w,\n/static/5496a0c1293230c5dd12aa7b447827f8/d7e60/best-budget-app-2024.jpg 362w,\n/static/5496a0c1293230c5dd12aa7b447827f8/948a2/best-budget-app-2024.jpg 724w",
+                "sizes": "(min-width: 768px) 384px, 100vw"
+              },
+              "sources": [
+                {
+                  "srcSet": "/static/5496a0c1293230c5dd12aa7b447827f8/76055/best-budget-app-2024.webp 181w,\n/static/5496a0c1293230c5dd12aa7b447827f8/66c86/best-budget-app-2024.webp 362w,\n/static/5496a0c1293230c5dd12aa7b447827f8/dbc43/best-budget-app-2024.webp 724w",
+                  "type": "image/webp",
+                  "sizes": "(min-width: 768px) 384px, 100vw"
+                }
+              ]
+            },
+            "width": 724,
+            "height": 482.99999999999994
+          }
+        },
+        {
+          "id": "f552d30b-47fc-5354-9885-ee4cdc0e1263",
+          "title": "How to Pay for Your Dream Vacation",
+          "slug": "/credit-health/insights/how-to-pay-for-your-dream-vacation/",
+          "image": {
+            "layout": "constrained",
+            "backgroundColor": "#0868c8",
+            "images": {
+              "fallback": {
+                "src": "/static/9036bdfb0118920b534cbc44fcf8939b/3b307/how-to-pay-for-your-dream-vacation.jpg",
+                "srcSet": "/static/9036bdfb0118920b534cbc44fcf8939b/d9f52/how-to-pay-for-your-dream-vacation.jpg 200w,\n/static/9036bdfb0118920b534cbc44fcf8939b/0132d/how-to-pay-for-your-dream-vacation.jpg 400w,\n/static/9036bdfb0118920b534cbc44fcf8939b/3b307/how-to-pay-for-your-dream-vacation.jpg 800w",
+                "sizes": "(min-width: 768px) 384px, 100vw"
+              },
+              "sources": [
+                {
+                  "srcSet": "/static/9036bdfb0118920b534cbc44fcf8939b/b9488/how-to-pay-for-your-dream-vacation.webp 200w,\n/static/9036bdfb0118920b534cbc44fcf8939b/47294/how-to-pay-for-your-dream-vacation.webp 400w,\n/static/9036bdfb0118920b534cbc44fcf8939b/89c0d/how-to-pay-for-your-dream-vacation.webp 800w",
+                  "type": "image/webp",
+                  "sizes": "(min-width: 768px) 384px, 100vw"
+                }
+              ]
+            },
+            "width": 800,
+            "height": 533
+          }
+        },
+        {
+          "id": "58e5a962-8e54-5e8e-8b79-23292486ecf6",
+          "title": "Why You Should Have a Buy Now, Pay Later Budget",
+          "slug": "/credit-health/insights/why-you-should-have-a-buy-now-pay-later-budget/",
+          "image": {
+            "layout": "constrained",
+            "backgroundColor": "#b8b8a8",
+            "images": {
+              "fallback": {
+                "src": "/static/cc0a01b57bd71026136fce69a32c217b/6c7a4/why-you-should-have-a-bnpl-budget.png",
+                "srcSet": "/static/cc0a01b57bd71026136fce69a32c217b/47381/why-you-should-have-a-bnpl-budget.png 200w,\n/static/cc0a01b57bd71026136fce69a32c217b/07fa7/why-you-should-have-a-bnpl-budget.png 400w,\n/static/cc0a01b57bd71026136fce69a32c217b/6c7a4/why-you-should-have-a-bnpl-budget.png 800w",
+                "sizes": "(min-width: 768px) 384px, 100vw"
+              },
+              "sources": [
+                {
+                  "srcSet": "/static/cc0a01b57bd71026136fce69a32c217b/988cc/why-you-should-have-a-bnpl-budget.webp 200w,\n/static/cc0a01b57bd71026136fce69a32c217b/2bb98/why-you-should-have-a-bnpl-budget.webp 400w,\n/static/cc0a01b57bd71026136fce69a32c217b/9953f/why-you-should-have-a-bnpl-budget.webp 800w",
+                  "type": "image/webp",
+                  "sizes": "(min-width: 768px) 384px, 100vw"
+                }
+              ]
+            },
+            "width": 800,
+            "height": 435
+          }
+        }
+      ],
+      "relatedArticles": [
+        {
+          "id": "cf673fb9-cdfe-5878-92df-852273e714f0",
+          "title": "Personal Loan vs Credit Card: Which is Right for You?",
+          "time": 2,
+          "slug": "/credit-health/insights/personal-loan-vs-credit-card-right/",
+          "image": {
+            "layout": "constrained",
+            "backgroundColor": "#a8a8b8",
+            "images": {
+              "fallback": {
+                "src": "/static/709fd441da960dc9b29a9b7b3aad5aef/c87d9/blog-loan-vs-credit-card.jpg",
+                "srcSet": "/static/709fd441da960dc9b29a9b7b3aad5aef/f8a6b/blog-loan-vs-credit-card.jpg 192w,\n/static/709fd441da960dc9b29a9b7b3aad5aef/2b9c6/blog-loan-vs-credit-card.jpg 384w,\n/static/709fd441da960dc9b29a9b7b3aad5aef/c87d9/blog-loan-vs-credit-card.jpg 768w",
+                "sizes": "(min-width: 768px) 384px, 100vw"
+              },
+              "sources": [
+                {
+                  "srcSet": "/static/709fd441da960dc9b29a9b7b3aad5aef/abff3/blog-loan-vs-credit-card.webp 192w,\n/static/709fd441da960dc9b29a9b7b3aad5aef/6da84/blog-loan-vs-credit-card.webp 384w,\n/static/709fd441da960dc9b29a9b7b3aad5aef/915eb/blog-loan-vs-credit-card.webp 768w",
+                  "type": "image/webp",
+                  "sizes": "(min-width: 768px) 384px, 100vw"
+                }
+              ]
+            },
+            "width": 768,
+            "height": 500.99999999999994
+          }
+        },
+        {
+          "id": "f70c3e6c-8a6a-56ce-995d-b28d9dcd63f3",
+          "title": "How to Pay Off Your Credit Cards",
+          "time": 2,
+          "slug": "/credit-health/insights/pay-off-credit-card-debt/",
+          "image": {
+            "layout": "constrained",
+            "backgroundColor": "#080808",
+            "images": {
+              "fallback": {
+                "src": "/static/baa8ba6d4da1c0f667488a19e0365df8/39611/blog-pay-off-credit-card.jpg",
+                "srcSet": "/static/baa8ba6d4da1c0f667488a19e0365df8/0f61a/blog-pay-off-credit-card.jpg 192w,\n/static/baa8ba6d4da1c0f667488a19e0365df8/c83fc/blog-pay-off-credit-card.jpg 384w,\n/static/baa8ba6d4da1c0f667488a19e0365df8/39611/blog-pay-off-credit-card.jpg 768w",
+                "sizes": "(min-width: 768px) 384px, 100vw"
+              },
+              "sources": [
+                {
+                  "srcSet": "/static/baa8ba6d4da1c0f667488a19e0365df8/99b84/blog-pay-off-credit-card.webp 192w,\n/static/baa8ba6d4da1c0f667488a19e0365df8/bf9f6/blog-pay-off-credit-card.webp 384w,\n/static/baa8ba6d4da1c0f667488a19e0365df8/588ff/blog-pay-off-credit-card.webp 768w",
+                  "type": "image/webp",
+                  "sizes": "(min-width: 768px) 384px, 100vw"
+                }
+              ]
+            },
+            "width": 768,
+            "height": 512
+          }
+        }
+      ],
+      "slug": "/personal-loans/refinance-credit-cards/",
+      "blogCategory": null
+    }
+  },
+  "staticQueryHashes": [],
+  "slicesMap": {}
+}
