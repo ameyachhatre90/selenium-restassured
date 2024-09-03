@@ -29,7 +29,7 @@ public class SignInPage extends PageBase {
 
     // Locate the username field and enter the value
     public void enterUsername(String username) {
-        WebElement usernameField = seleniumUtils.waitForElementToBeVisibleByXpath(driver, emailAddressBoxXpath, DEFAULT_WAIT_TIME);
+        WebElement usernameField = seleniumUtils.waitForElementToBeVisible(driver, emailAddressBoxXpath, DEFAULT_WAIT_TIME);
         assert usernameField != null;
         usernameField.sendKeys(username);
     }
